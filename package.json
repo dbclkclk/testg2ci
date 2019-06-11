@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./config/webpack.config.development.js --env.NODE_ENV=development",
-    "build": "rimraf dist webpack --config ./config/webpack.config.production.js --env.production",
+    "build": "webpack --config ./config/webpack.config.production.js --env.production",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage --colors"
